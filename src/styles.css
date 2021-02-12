@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    cursor:pointer;
+    background-color:rgb(122, 233, 112);
+    color:white;
+    transition:0.5s;
+}
+button
+{
+ width: 100px;
+  font-size:16px;
+  padding:10px;
+  background-color:blue;
+  border-radius:5px;
+  color:white;
+  opacity:0.6;
+  transition: 0.3s;
+  border:1px solid gainsboro;
+}
+button:hover
+{
+    opacity:1;
+    cursor:pointer;
+}
+nav
+{
+    position:absolute;
+    background-color:blue;
+    color:white;
+    padding:20px;
+    width:1100px;
+    display:center;
+    padding-top:10px;
+    margin-left:85px;
+    border-radius:0px 0px 0px 55px;
+}
+
+nav h1
+{
+    padding-left:60px;
+}
+@media screen and (max-width:1099px)
+{
+    nav
+    {
+     width:100%;
+     position:absolute;
+     margin-left:0px;
+    }
+    nav h1
+    {
+    padding-left:30px;
+    font-size:auto;
+    margin-top:0px;
+    }
+}

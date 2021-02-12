@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body
+{
+background-color: gainsboro;
+font-family: 'Montserrat', sans-serif;
+}
+#wholepage
+{
+    position:absolute;
+    padding:40px;
+    border:2px solid white;
+    /*height:1000px;*/
+    margin-top:70px;
+    max-width:1000px;
+    margin-left:230px;
+    min-height:100px;
+    min-width:100px;
+    border-radius:10px;
+    background-color:gainsboro;
+}
+.grid-container
+{
+  min-height:100px;
+  margin-top:10px;
+ /* margin-left:25px;*/
+  display:grid;
+  grid-template-columns: repeat(3,250px);
+  grid-gap:20px;
+}
+
+#details
+{
+    display:flex;
+    flex-direction: column;
+    border-radius:10px;
+    min-height:100px;
+    background-color:white;
+    border:10px solid white;
+}
+#details ul li
+{
+    list-style:none;
+}
+
+#details img
+{
+    position:relative;
+    margin-top:0px;
+    width:50px;
+    height:50px;
+}
+h3
+{
+    font-size:16px;
+    color:grey;
+    margin-left:8px;
+    margin-top:30px;
+    margin-bottom:0px;
+}
+h1
+{
+    color:grey;
+    margin-left:8px;
+    margin-top:30px;
+    margin-bottom:5px;
+    font-size:20px;   
+}
+h4{
+    color:blue;
+    margin-left:8px;
+    margin-top:30px;
+    margin-bottom:5px;
+    font-size:16px;
+}
+h2 {
+    margin-left:8px;
+    font-size:18px; 
+    margin-top:0px; 
+    margin-bottom:0px;
+    color:black;
+}
+
+#btn
+{
+   display:flex;
+   justify-content: center;
+   margin:20px;
+}
+
+select
+{
+    width:130px;
+    height:47px;
+    margin-right:10px;
+    border-style:none;
+}
+#searchbar
+{
+    display:flex;
+    margin:10px;
+    justify-content:flex-end;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:999px)
+{
+    .grid-container
+    {
+    margin-top:5px;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap:5px;
+    }
+    #details img
+    {
+     position:relative;
+     width:40px;
+     height:40px;
+    }
+    #wholepage
+    {
+        position:absolute;
+        padding:10px;
+        border:1px solid black;
+        margin-top:40px;
+        width:90%;
+        margin-left:5px;
+        border-radius:5px;
+        background-color: gainsboro;
+    }
+    h2{font-size:16px};
+    h3{font-size:12px};
+    h4{font-size:12px};
+    h1{font-size:18px};
+  
+}

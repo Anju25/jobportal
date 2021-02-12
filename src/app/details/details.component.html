@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <app-nav></app-nav>
+   <div id="wholepage">
+     <div id="searchbar">
+         <select (change)="selectchangevalue($event)">
+             <option selected>Full Time</option>
+             <option>Part Time</option>
+             <option>All</option>
+         </select>
+         <button (click)="search()">Search</button>
+     </div>
+   <div class="grid-container">
+        <div *ngFor="let i of filtered" id="details">
+           <a (click)="onclick(i.company_url)">
+           <img src="{{i.company_logo}}" alt="Image">
+           <h3>{{i.created_at | date }} *{{i.type}}</h3> 
+           <h2>{{i.title}}</h2>
+           <h1>{{i.company}}</h1>
+           <h4>{{i.location}}</h4>  
+         </a>
+       </div>
+   </div>
+   <div id="btn">
+      <button (click)="loadmore()">Load More</button>
+   </div>
+   </div>
+   
+</body>
+</html>
+
